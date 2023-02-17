@@ -20,8 +20,8 @@ def add_view(request: WSGIRequest):
         'status': request.POST.get('status'),
         'completion_date': request.POST.get('completion_date')
     }
-    Task.objects.create(**task_data)
-    return redirect('/')
+    task = Task.objects.create(**task_data)
+    return redirect('task_detail', pk=task.pk)
 
 
 def detailed_view(request, pk):
