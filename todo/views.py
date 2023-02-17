@@ -1,5 +1,5 @@
 from django.core.handlers.wsgi import WSGIRequest
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from todo.models import Task
 
 
@@ -22,3 +22,8 @@ def add_view(request: WSGIRequest):
     }
     Task.objects.create(**task_data)
     return redirect('/')
+
+
+def detailed_view(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    return render(request, 'task_detail.html', context={'task': task})
