@@ -1,0 +1,52 @@
+[
+{
+  "model": "todo.task",
+  "pk": 17,
+  "fields": {
+    "description": "Wash dishes",
+    "details": "",
+    "status": "new",
+    "completion_date": "2023-02-17"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 18,
+  "fields": {
+    "description": "Buy groceries",
+    "details": "Buy milk, bread, sausages, meat, chicken, fruits, vegetables from grocery store",
+    "status": "in process",
+    "completion_date": "2023-02-18"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 19,
+  "fields": {
+    "description": "Make a call",
+    "details": "Call Andrew from accounting at +1-800-109-12-56",
+    "status": "completed",
+    "completion_date": "2023-02-16"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 20,
+  "fields": {
+    "description": "Clean my room",
+    "details": "",
+    "status": "new",
+    "completion_date": "2023-02-19"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 21,
+  "fields": {
+    "description": "Do my homework",
+    "details": "Complete homework 53, and don't forget to make atomic commits!",
+    "status": "in process",
+    "completion_date": "2023-02-17"
+  }
+}
+]
